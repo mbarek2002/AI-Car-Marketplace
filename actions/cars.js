@@ -27,9 +27,9 @@ export async function processCarImageWithAI(file) {
     const base64Image = await fileToBase64(file);
 
     const imagePart = {
-      inlineData: {
+      inlineData: { 
         data: base64Image,
-        minType: file.type,
+        mimeType: file.type,
       },
     };
 

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const CarList = () => {
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState("");
   const router = useRouter();
 
   const handleSearchSubmit = (e) => {
